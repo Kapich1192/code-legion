@@ -1,6 +1,6 @@
-FROM openjdk:17
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac /src/main/java/com/codelegion/Code/Legion/CodeLegionApplication.java
-CMD ["java", "CodeLegionApplication"]
+FROM maven:3.8.3-openjdk-17
+WORKDIR /code-legion
+COPY . .
+RUN mvn clean
+CMD mvn spring-boot:run
 

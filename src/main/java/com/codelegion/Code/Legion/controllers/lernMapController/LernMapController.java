@@ -12,7 +12,7 @@ public class LernMapController {
     @GetMapping("/learn")
     public String learn(Model model) {
 
-        return "learn.html";
+        return "pages/learn";
     }
 //    @PostMapping("/lern")
 //    public void answer(Model model) {

@@ -9,7 +9,7 @@ public class AccountController {
 
     @GetMapping("/account")
     public String account(Model model) {
-        return "profile";
+        return "pages/profile";
     }
 
 //    @PostMapping("/account")
