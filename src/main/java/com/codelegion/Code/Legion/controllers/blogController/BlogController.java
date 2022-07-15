@@ -14,7 +14,7 @@ public class BlogController {
     @GetMapping("/blog")
     public String blogMain(Model model) {
         Iterable<Article> articles = articleRepository.findAll();
-        return "blog";
+        return "pages/blog";
     }
 
 }

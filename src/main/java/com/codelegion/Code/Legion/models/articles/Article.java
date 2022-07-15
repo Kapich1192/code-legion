@@ -16,7 +16,7 @@ public class Article {
 
     private String title;
     private String description;
-    private ArrayList<ElementArticle> listElements;
+    private ArrayList<String> listElements;
     /*constructors*/
     /*getters*/
     /*setters*/
