@@ -1,11 +1,11 @@
-version: "3.8"
+version: "3.1"
 services:
   mysqldb:
     image: mysql:5.7
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=1111
-      - MYSQL_DATABASE=code_legion
+      - MYSQL_ROOT_PASSWORD= root
+      - MYSQL_DATABASE= code_legion
     ports:
       - 3307:3306
     volumes:
@@ -19,6 +19,7 @@ services:
       - 8080:80
     environment:
       - PMA_ARBITRARY=1
+
   app:
     depends_on:
       - phpmyadmin
