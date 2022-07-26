@@ -1,3 +1,2 @@
-# code-legion
-Code Legion
-Всем привет вот собственно и наш проектец)))
+Работа с Bootstrap
+https://youtu.be/mqSi68zEVgI
